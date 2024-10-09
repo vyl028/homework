@@ -1,0 +1,23 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+# neo4j数据库地址
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/redstudyplatform_database
+    username: root
+    password: Chenyan2004
+  data:
+    neo4j:
+      url: bolt://localhost:7687
+      username: neo4j
+      password: Chenyan2004
+logging:
+  level:
+    org:
+        neo4j:
+            driver:
+            internal:
+                logging: debug
+api:
